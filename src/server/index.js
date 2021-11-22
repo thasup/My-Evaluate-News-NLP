@@ -2,6 +2,8 @@ var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
 var cors = require('cors')
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express()
 app.use(cors())
@@ -18,7 +20,7 @@ console.log(__dirname)
 
 console.log(JSON.stringify(mockAPIResponse))
 
-const port = 8081;
+const port = 3030;
 
 // designates what port the app will listen to for incoming requests
 app.listen(port, function () {
@@ -32,3 +34,8 @@ app.get('/', function (req, res) {
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
+
+// My API Credential
+var meaningCloudAPI = new meaningCloud({
+    application_key: process.env.API_KEY
+});
