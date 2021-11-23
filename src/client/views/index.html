@@ -20,14 +20,13 @@
             <section>
                 <form class="" onsubmit="return Client.handleURL(event)">
                     <input id="name" type="text" name="input" value="" placeholder="Please Put Your URL Here.">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleURL(event)" onsubmit="return handleURL(event)">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleURL(event)" onsubmit="return Client.handleURL(event)">
                 </form>
             </section>
 
             <section>
                 <h3>Form Results:</h3>
                 <div class="results">
-                    <div id="polarity"></div>
                     <div id="agreement"></div>
                     <div id="subjectivity"></div>
                     <div id="irony"></div>

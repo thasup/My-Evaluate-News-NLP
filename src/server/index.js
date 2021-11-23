@@ -34,7 +34,9 @@ app.get('/', function (req, res) {
 
 // POST Route
 app.post('/data', async(req, res) => {
-    const response = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${meaningCloudAPI}&url=${req.body.url}&lang=en`);
+    const text =req.body.url;
+    const response = await (fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${meaningCloudAPI}&url=${text}&lang=en`, {method: 'POST'})
+    );
 
     try {
         const data = await response.json();
@@ -44,4 +46,3 @@ app.post('/data', async(req, res) => {
         console.log("error", error);
     };
 });
-

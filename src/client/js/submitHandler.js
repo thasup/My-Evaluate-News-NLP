@@ -3,18 +3,10 @@ async function handleURL(event) {
 
     // check what url was put into the form field
     let inputURL = document.getElementById('name').value;
-
-    function checkForURL(url) {
-        console.log("::: Running checkForURL :::", url);
-
-        let expression = "^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?";
-        let regex = new RegExp(expression);
-
-        return regex.test(url);
-    };
+    console.log(inputURL);
 
     // POST request to server side
-    if(checkForURL(inputURL) === true) {
+    if(Client.checkForURL(inputURL) === true) {
 
         console.log("::: Form Submitted :::");
         fetch('http://localhost:8081/data', {
@@ -27,9 +19,9 @@ async function handleURL(event) {
         .then(function(res) {
             Client.updateUI(res)
         });
-    } else {
+    } else (
         alert("Invalid URL")
-    };
+    );
 };
 
 export { handleURL }
