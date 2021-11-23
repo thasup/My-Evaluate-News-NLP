@@ -18,15 +18,21 @@
 
         <main>
             <section>
-                <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="" onsubmit="return Client.handleURL(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="Please Put Your URL Here.">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleURL(event)" onsubmit="return handleURL(event)">
                 </form>
             </section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+                <h3>Form Results:</h3>
+                <div class="results">
+                    <div id="polarity"></div>
+                    <div id="agreement"></div>
+                    <div id="subjectivity"></div>
+                    <div id="irony"></div>
+                    <div id="confidence"></div>
+                </div>
             </section>
         </main>
 
