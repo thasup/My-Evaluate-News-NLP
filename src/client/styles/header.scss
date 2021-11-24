@@ -1,5 +1,31 @@
+$font-stack-1: 'Varela Round', 'sans-serif';
+$font-stack-2: 'PT Sans', 'sans-serif';
+$my-black: #1d1d1f;
+$my-white: #fff;
+$my-grey: #d6d6d6;
+$main-theme-color: #1dc3ff;
+$sub-theme-color: #77dbff;
+$shadow: 2px 2px 3px rgb(56, 56, 56);
+
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 40px;
+    max-width: 800px;
+    margin: 20px auto 10px auto;
+}
+
+.head {
+    h1 {
+        text-align: center;
+        font-size: 4.5em;
+        color: $main-theme-color;
+        display: block;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+        color: $my-black;
+        display: inline-block;
+    }
 }
