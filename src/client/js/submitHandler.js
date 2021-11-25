@@ -1,4 +1,4 @@
-async function handleURL(event) {
+function handleURL(event) {
     event.preventDefault();
 
     // check what url was put into the form field
