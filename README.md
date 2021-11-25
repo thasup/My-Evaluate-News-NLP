@@ -19,7 +19,7 @@ this project is part of Udacity front end web developer nanodegree program.
 [(Back to top)](#table-of-contents)
 
 - HTML
-- CSS
+- SCSS
 - JavaScript
 
 # Install
