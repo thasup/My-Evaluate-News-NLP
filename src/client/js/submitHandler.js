@@ -13,11 +13,13 @@ function handleURL(event) {
             method: 'POST',
             credentials: 'same-origin',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({url: inputURL})       
+            body: JSON.stringify({url: inputURL})
         })
         .then(res => res.json())
         .then(function(res) {
             Client.updateUI(res)
+            console.log(res);
+            console.log("::: Fetching Success :::");
         });
     } else (
         alert("Invalid URL")

@@ -42,7 +42,7 @@ app.post('/data', async(req, res) => {
 
     try {
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         res.send(data);
     } catch (error) {
         console.log("error", error);
