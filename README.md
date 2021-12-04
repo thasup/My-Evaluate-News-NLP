@@ -1,4 +1,5 @@
 <!-- Add banner here -->
+![My_project](docs/preview_project4.jpg)
 
 # My Evaluate News NLP
 
