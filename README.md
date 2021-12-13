@@ -2,9 +2,12 @@
 ![My_project](docs/preview_project4.gif)
 
 # My Evaluate News NLP
-
 <!-- Describe your project in brief -->
-this project is part of Udacity front end web developer nanodegree program.
+Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
+
+*this project is part of Udacity front end web developer nanodegree program.*
+
+[Evaluate News NLP Link](https://thasup-evaluate-news-nlp.herokuapp.com/)
 
 # Table of contents
 
@@ -61,3 +64,4 @@ For the MeaningCloud API: You can find the API here. Once you create an account 
 - API
 - webpack
 - service worker
+- Heroku
