@@ -40,7 +40,8 @@ Single page application that allows users to run Natural Language Processing (NL
 
 # How to get your API key
 [(Back to top)](#table-of-contents)
-For the MeaningCloud API: You can find the API here. Once you create an account with MeaningCloud, you will be given a license key to start using the API.
+
+You can find the API [here](https://www.meaningcloud.com/developer/sentiment-analysis). Once you create an account with MeaningCloud, you will be given a license key to start using the API.
 
 # Dependencies
 [(Back to top)](#table-of-contents)
