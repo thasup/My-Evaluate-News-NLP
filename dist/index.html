@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap" rel="stylesheet">
+        <title>Sentiment Analysis</title>
+    <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+    <body>
+        <header>
+            <div class="head">
+                <h1>Sentiment Analysis</h1>
+                <h3>Analyze the sentiment of social networks, reviews, or customer satisfaction surveys</h3>
+            </div>
+        </header>
+
+        <main>
+            <form onsubmit="return Client.handleURL(event)">
+                <input id="name" type="text" name="input" value="" placeholder="Please Put Your URL Here.">
+                <input id="submit-btn" type="submit" name="" value="Analyze" onclick="return Client.handleURL(event)" onsubmit="return Client.handleURL(event)">
+            </form>
+
+            <div class="results">
+                <p>RESULTS</p>
+                <div class="sentiments">
+                    <div id="agreement"></div>
+                    <div id="subjectivity"></div>
+                    <div id="irony"></div>
+                    <div id="confidence"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy Thanachon 2021</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
