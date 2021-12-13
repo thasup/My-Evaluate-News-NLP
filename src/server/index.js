@@ -19,7 +19,7 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 
 console.log(__dirname);
 
-const port = 8081;
+const port = process.env.PORT || 8081;
 
 // designates what port the app will listen to for incoming requests
 app.listen(port, function () {
