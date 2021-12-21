@@ -8,10 +8,10 @@ import './styles/form.scss'
 import './styles/header.scss'
 import './styles/resets.scss'
 
+import background from './img/background.jpg'
+
 export {
     handleURL,
     updateUI,
     checkForURL
 };
-
-console.log("Client-index.js");

@@ -5,11 +5,12 @@ function handleURL(event) {
     let inputURL = document.getElementById('name').value;
     console.log(inputURL);
 
+    const path = "https://thasup-evaluate-news-nlp.herokuapp.com" || "http://localhost:8081";
     // POST request to server side
     if(Client.checkForURL(inputURL) === true) {
 
         console.log("::: Form Submitted :::");
-        fetch('http://localhost:8081/data', {
+        fetch(`${path}/data`, {
             method: 'POST',
             credentials: 'same-origin',
             headers: { 'Content-Type': 'application/json' },
