@@ -1,5 +1,5 @@
-$font-stack-1: 'Varela Round', 'sans-serif';
-$font-stack-2: 'PT Sans', 'sans-serif';
+$font-stack-1: "Varela Round", "sans-serif";
+$font-stack-2: "PT Sans", "sans-serif";
 $my-black: #1d1d1f;
 $my-white: #fff;
 $my-grey: #d6d6d6;
@@ -9,7 +9,23 @@ $shadow: 2px 2px 3px rgb(56, 56, 56);
 
 footer {
     color: $my-black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    position: absolute;
+
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+
+    a {
+        font-weight: bold;
+        color: $main-theme-color;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+}
+
+/* Tablet, Desktop */
+@media (min-width: 576px) {
+    footer {
+        bottom: 0;
+    }
 }

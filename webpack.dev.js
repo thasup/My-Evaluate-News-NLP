@@ -1,42 +1,46 @@
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebPackPlugin = require("html-webpack-plugin")
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    entry: './src/client/index.js',
-    mode: 'development',
-    devtool: 'source-map',
+    entry: "./src/client/index.js",
+    mode: "development",
+    devtool: "source-map",
     output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'bundle.min.js',
-        libraryTarget: 'var',
-        library: 'Client'
+        path: path.join(__dirname, "dist"),
+        filename: "bundle.min.js",
+        libraryTarget: "var",
+        library: "Client",
     },
     module: {
         rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+            },
             {
                 test: /\.m?js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
+                        presets: ["@babel/preset-env"],
+                    },
+                },
             },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
                     // Creates `style` nodes from JS strings
-                    'style-loader',
+                    "style-loader",
                     // Translates CSS into CommonJS
-                    'css-loader',
+                    "css-loader",
                     // Compiles Sass to CSS
-                    'sass-loader',
-                  ]
-            }
-        ]
+                    "sass-loader",
+                ],
+            },
+        ],
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -50,7 +54,7 @@ module.exports = {
             verbose: true,
             // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-        })
-    ]
+            protectWebpackAssets: false,
+        }),
+    ],
 };
