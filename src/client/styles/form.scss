@@ -52,6 +52,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        visibility: hidden;
 
         p {
             text-align: center;
@@ -68,6 +69,10 @@ main {
                 font-size: 1.1rem;
             }
         }
+    }
+
+    .show {
+        visibility: visible;
     }
 
     .keys {

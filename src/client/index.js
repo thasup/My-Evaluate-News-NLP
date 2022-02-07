@@ -8,5 +8,6 @@ import "./styles/form.scss";
 import "./styles/header.scss";
 
 import background from "./img/background.jpg";
+import favicon32x32 from "./img/favicon32x32.png";
 
 export { handleURL, updateUI, checkForURL };
