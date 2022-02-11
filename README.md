@@ -8,27 +8,25 @@
 
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
-_this project is part of Udacity front end web developer nanodegree program._
-
-[Evaluate News NLP Link](https://thasup-evaluate-news-nlp.netlify.app/)
+[Evaluate News NLP Link](https://thasup-sentiment-analysis.netlify.app/)
 
 # Table of contents
 
--   [My-Evaluate-News-NLP](#my-evaluate-news-nlp)
--   [Table of contents](#table-of-contents)
--   [Languages](#languages)
--   [Install](#install)
--   [How to get your API key](#how-to-get-your-api-key)
--   [Dependencies](#dependencies)
--   [Technology](#technology)
+- [My-Evaluate-News-NLP](#my-evaluate-news-nlp)
+- [Table of contents](#table-of-contents)
+- [Languages](#languages)
+- [Install](#install)
+- [How to get your API key](#how-to-get-your-api-key)
+- [Dependencies](#dependencies)
+- [Technology](#technology)
 
 # Languages
 
 [(Back to top)](#table-of-contents)
 
--   HTML
--   SCSS
--   JavaScript
+- HTML
+- SCSS
+- JavaScript
 
 # Install
 
@@ -53,26 +51,26 @@ You can find the API [here](https://www.meaningcloud.com/developer/sentiment-ana
 
 [(Back to top)](#table-of-contents)
 
--   cors version 2.8.5
--   dotenv version 10.0.0
--   express version 4.17.1
--   node-fetch version 3.1.0
--   webpack version 5.63.0
--   webpack-cli version 4.9.1
+- cors version 2.8.5
+- dotenv version 10.0.0
+- express version 4.17.1
+- node-fetch version 3.1.0
+- webpack version 5.63.0
+- webpack-cli version 4.9.1
 
 # Technology
 
 [(Back to top)](#table-of-contents)
 
--   HTML
--   SCSS
--   Javascript
--   Bootstrap
--   DOM
--   Node.js
--   Express.js
--   API
--   Webpack
--   Service Worker
--   Netlify
--   Docker
+- HTML
+- SCSS
+- Javascript
+- Bootstrap
+- DOM
+- Node.js
+- Express.js
+- API
+- Webpack
+- Service Worker
+- Netlify
+- Docker

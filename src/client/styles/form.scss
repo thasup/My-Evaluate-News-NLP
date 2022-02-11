@@ -8,126 +8,132 @@ $sub-theme-color: #77dbff;
 $shadow: 2px 2px 3px rgb(56, 56, 56);
 
 main {
-    margin: 0 40px;
+  margin: 0 40px;
 
-    form {
-        border: 1px solid $my-white;
-        border-radius: 3px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.8);
-        max-width: 800px !important;
-        margin: 0px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 15px;
+  form {
+    border: 1px solid $my-white;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 800px !important;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
 
-        input {
-            line-height: 16px;
-            border-radius: 6px;
-        }
-
-        #name {
-            width: 90%;
-            padding: 10px 10px;
-            margin: 20px 20px;
-        }
-
-        #submit-btn {
-            padding: 10px 10%;
-            margin: 20px 80px;
-            background-color: $main-theme-color;
-            color: $my-white;
-
-            &:hover {
-                color: #e4e4e4;
-                box-shadow: $shadow;
-                cursor: pointer;
-            }
-
-            #loading {
-                visibility: hidden;
-                display: none;
-            }
-
-            #loading.show {
-                visibility: visible;
-                display: block;
-                margin-right: 10px;
-            }
-        }
+    input {
+      line-height: 16px;
+      border-radius: 6px;
     }
 
-    .results {
-        margin: 2rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #name {
+      width: 90%;
+      padding: 10px 10px;
+      margin: 20px 20px;
+    }
+
+    #submit-btn {
+      padding: 10px 10%;
+      margin: 20px 80px;
+      background-color: $main-theme-color;
+      color: $my-white;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      outline: none;
+      border: none;
+      box-shadow: 0 3px 1px -2px #ccc, 0 2px 2px 0 #ccc, 0 1px 5px 0 #ccc;
+
+      &:hover {
+        color: #e6e6e6;
+        box-shadow: 0 4px 2px -3px #ccc, 0 4px 5px 1px #ccc, 0 2px 7px 1px #ccc;
+      }
+
+      #loading {
         visibility: hidden;
+        display: none;
+      }
 
-        p {
-            text-align: center;
-            font-weight: bold;
-            color: $my-black;
-            font-size: 1.5rem;
-        }
+      #loading.show {
+        visibility: visible;
+        display: block;
+        margin-right: 10px;
+      }
+    }
+  }
 
-        .sentiments {
-            min-width: 90%;
+  .results {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
 
-            .col-sm-6 {
-                max-width: 400px;
-            }
-
-            span {
-                font-weight: bold;
-                font-size: 1.1rem;
-            }
-        }
+    p {
+      text-align: center;
+      font-weight: bold;
+      color: $my-black;
+      font-size: 1.5rem;
     }
 
-    .show {
-        visibility: visible;
+    .sentiments {
+      min-width: 90%;
+
+      .col-sm-6 {
+        max-width: 400px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
     }
 
     .keys {
-        color: $main-theme-color;
+      color: $main-theme-color;
     }
+
     .values {
-        color: $my-black;
-        text-transform: lowercase;
+      color: $my-black;
+      text-transform: lowercase;
     }
+  }
+
+  .show {
+    visibility: visible;
+  }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
-    main {
-        margin: 0 0px;
+  main {
+    margin: 0 0px;
 
-        form {
-            #name {
-                padding: 5px 10px;
-                margin: 5px 20px;
-            }
+    form {
+      #name {
+        padding: 5px 10px;
+        margin: 5px 20px;
+      }
 
-            #submit-btn {
-                font-size: 1rem;
-                padding: 5px 10%;
-                margin: 5px 80px;
-            }
-        }
-
-        .results {
-            p {
-                font-size: 1.25rem;
-            }
-
-            .sentiments {
-                min-width: 50%;
-                span {
-                    font-size: 1rem;
-                }
-            }
-        }
+      #submit-btn {
+        font-size: 1rem;
+        padding: 5px 10%;
+        margin: 5px 80px;
+      }
     }
+
+    .results {
+      p {
+        font-size: 1.25rem;
+      }
+
+      .sentiments {
+        min-width: 50%;
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
