@@ -2,17 +2,17 @@
 
 ![My_project](docs/preview4.png)
 
-# My Evaluate News NLP
+# Sentiment Analysis App
 
 <!-- Describe your project in brief -->
 
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
-[Evaluate News NLP Link](https://thasup-sentiment-analysis.netlify.app/)
+Sentiment Analysis App [Link](https://thasup-sentiment-analysis.netlify.app/)
 
 # Table of contents
 
-- [My-Evaluate-News-NLP](#my-evaluate-news-nlp)
+- [Sentiment-Analysis-App](#sentiment-analysis-app)
 - [Table of contents](#table-of-contents)
 - [Languages](#languages)
 - [Install](#install)
