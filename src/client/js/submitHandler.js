@@ -1,6 +1,11 @@
 function handleURL(event) {
     event.preventDefault();
 
+    const button = document.querySelector("#submit-btn");
+    const span = document.querySelector("#loading");
+    const text = document.querySelector("#text-btn");
+    const disabled = document.createAttribute("disabled");
+
     const result = document.getElementsByClassName("results")[0];
 
     // check what url was put into the form field
@@ -13,6 +18,11 @@ function handleURL(event) {
     // POST request to server side
     if (Client.checkForURL(inputURL) === true) {
         console.log("::: Form Submitted :::");
+        // Uppdate button
+        button.setAttributeNode(disabled);
+        span.classList.add("show");
+        text.textContent = "Loading...";
+        // Fetch data
         fetch(`${path}/data`, {
             method: "POST",
             credentials: "same-origin",
@@ -21,6 +31,11 @@ function handleURL(event) {
         })
             .then((res) => res.json())
             .then(function (res) {
+                // Uppdate button
+                button.removeAttributeNode(disabled);
+                span.classList.remove("show");
+                text.textContent = "Submit";
+                // Update UI
                 Client.updateUI(res);
                 console.log(res);
                 console.log("::: Fetching Success :::");

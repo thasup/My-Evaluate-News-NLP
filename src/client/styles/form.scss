@@ -44,6 +44,17 @@ main {
                 box-shadow: $shadow;
                 cursor: pointer;
             }
+
+            #loading {
+                visibility: hidden;
+                display: none;
+            }
+
+            #loading.show {
+                visibility: visible;
+                display: block;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -62,7 +73,11 @@ main {
         }
 
         .sentiments {
-            min-width: 50%;
+            min-width: 90%;
+
+            .col-sm-6 {
+                max-width: 400px;
+            }
 
             span {
                 font-weight: bold;
@@ -81,5 +96,38 @@ main {
     .values {
         color: $my-black;
         text-transform: lowercase;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    main {
+        margin: 0 0px;
+
+        form {
+            #name {
+                padding: 5px 10px;
+                margin: 5px 20px;
+            }
+
+            #submit-btn {
+                font-size: 1rem;
+                padding: 5px 10%;
+                margin: 5px 80px;
+            }
+        }
+
+        .results {
+            p {
+                font-size: 1.25rem;
+            }
+
+            .sentiments {
+                min-width: 50%;
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }

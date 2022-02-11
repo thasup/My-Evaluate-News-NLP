@@ -44,15 +44,21 @@
                     value=""
                     placeholder="Enter your URL here."
                 />
-                <input
+                <button
                     id="submit-btn"
-                    type="submit"
-                    name=""
-                    class="btn btn-lg btn-info"
-                    value="Submit"
+                    class="btn btn-lg d-flex align-items-center"
+                    type="button"
                     onclick="return Client.handleURL(event)"
                     onsubmit="return Client.handleURL(event)"
-                />
+                >
+                    <span
+                        id="loading"
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                    ></span>
+                    <span id="text-btn">Submit</span>
+                </button>
             </form>
 
             <div class="results">
