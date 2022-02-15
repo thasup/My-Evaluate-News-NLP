@@ -14,11 +14,9 @@ function handleURL(event) {
 
   const path =
     "https://thasup-sentiment-analysis.herokuapp.com" ||
-    "http://localhost:8081" ||
-    "https://thasup-sentiment-analysis.netlify.app";
+    "http://localhost:8081";
   // POST request to server side
   if (Client.checkForURL(inputURL) === true) {
-    console.log("::: Form Submitted :::");
     // Uppdate button
     button.setAttributeNode(disabled);
     span.classList.add("show");
@@ -32,15 +30,12 @@ function handleURL(event) {
     })
       .then((res) => res.json())
       .then(function (res) {
-        console.log(`${path}/data`);
         // Uppdate button
         button.removeAttributeNode(disabled);
         span.classList.remove("show");
         text.textContent = "Submit";
         // Update UI
         Client.updateUI(res);
-        console.log(res);
-        console.log("::: Fetching Success :::");
         result.classList.add("show");
       });
   } else alert("Invalid URL");
