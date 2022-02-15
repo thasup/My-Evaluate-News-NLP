@@ -8,27 +8,27 @@ $sub-theme-color: #77dbff;
 $shadow: 2px 2px 3px rgb(56, 56, 56);
 
 .head {
-    margin: 2rem 0;
-    h1 {
-        text-align: center;
-        font-size: 4em;
-        color: $main-theme-color;
-    }
-    h3 {
-        text-align: center;
-        font-size: 1.5em;
-        color: $my-black;
-    }
+  margin: 4.5rem 0 2rem;
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    color: $main-theme-color;
+  }
+  h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: $my-black;
+  }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
-    .head {
-        h1 {
-            font-size: 3em;
-        }
-        h3 {
-            font-size: 1.15em;
-        }
+  .head {
+    h1 {
+      font-size: 3em;
     }
+    h3 {
+      font-size: 1.15em;
+    }
+  }
 }

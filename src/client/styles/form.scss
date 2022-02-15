@@ -9,6 +9,7 @@ $shadow: 2px 2px 3px rgb(56, 56, 56);
 
 main {
   margin: 0 40px;
+  width: 90%;
 
   form {
     border: 1px solid $my-white;
@@ -109,6 +110,7 @@ main {
 @media (max-width: 576px) {
   main {
     margin: 0 0px;
+    width: 85%;
 
     form {
       #name {
