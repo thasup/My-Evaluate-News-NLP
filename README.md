@@ -1,14 +1,16 @@
 <!-- Add banner here -->
 
-![My_project](docs/preview4.png)
+![My_project](docs/preview5.png)
 
 # Sentiment Analysis App
 
 <!-- Describe your project in brief -->
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8203c82d-3e50-445a-b439-2b6b66f9732c/deploy-status)](https://app.netlify.com/sites/thasup-sentiment-analysis/deploys)
+
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
-Sentiment Analysis App [Link](https://thasup-sentiment-analysis.netlify.app/)
+[Link](https://thasup-sentiment-analysis.netlify.app/)
 
 # Table of contents
 
