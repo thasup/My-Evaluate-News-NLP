@@ -11,7 +11,7 @@
 
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
-[Link](https://thasup-sentiment-analysis.netlify.app/)
+[Link](https://thasup-sentiment-analysis.herokuapp.com/)
 
 # Table of contents
 
@@ -75,5 +75,5 @@ You can find the API [here](https://www.meaningcloud.com/developer/sentiment-ana
 - API
 - Webpack
 - Service Worker
-- Netlify
+- Heroku
 - Docker
