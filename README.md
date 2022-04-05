@@ -7,7 +7,6 @@
 <!-- Describe your project in brief -->
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/thasup/sentiment-analysis-app)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8203c82d-3e50-445a-b439-2b6b66f9732c/deploy-status)](https://app.netlify.com/sites/thasup-sentiment-analysis/deploys)
 
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
