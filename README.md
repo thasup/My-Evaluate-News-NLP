@@ -10,7 +10,7 @@
 
 Single page application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites.
 
-[Link](https://thasup-sentiment-analysis.herokuapp.com/)
+[Demo Link](https://thasup-sentiment-analysis.onrender.com)
 
 # Table of contents
 
@@ -37,7 +37,7 @@ Single page application that allows users to run Natural Language Processing (NL
 1. clone this git on computer
 2. install node.js
 3. run command `npm install` on terminal
-4. acquire your API key and replace it in `meaningCloudAPI` variable at `My-Evaluate-News-NLP\src\server\index.js`
+4. acquire your [Meaning Cloud API key](https://www.meaningcloud.com/developer/sentiment-analysis) and replace it in `env` file
 5. run command `npm run build-prod` on terminal
 6. run command `npm run start` on terminal
 7. go to `http://localhost:8081/`
@@ -74,5 +74,5 @@ You can find the API [here](https://www.meaningcloud.com/developer/sentiment-ana
 - API
 - Webpack
 - Service Worker
-- Heroku
+- Render
 - Docker
