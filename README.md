@@ -34,10 +34,10 @@ Single page application that allows users to run Natural Language Processing (NL
 
 [(Back to top)](#table-of-contents)
 
-1. clone this git on computer
+1. clone this git on the computer
 2. install node.js
 3. run command `npm install` on terminal
-4. acquire your [Meaning Cloud API key](https://www.meaningcloud.com/developer/sentiment-analysis) and replace it in `env` file
+4. acquire your [Meaning Cloud API key](https://www.meaningcloud.com/developer/sentiment-analysis) and replace it in `.env` file
 5. run command `npm run build-prod` on terminal
 6. run command `npm run start` on terminal
 7. go to `http://localhost:8081/`
