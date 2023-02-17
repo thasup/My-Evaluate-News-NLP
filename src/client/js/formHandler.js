@@ -9,4 +9,5 @@ function updateUI(data) {
     resultIrony.innerHTML = `<p><span class="keys">Irony :</span><span class="values"> ${data.irony}</span></p>`;
     resultConfidence.innerHTML = `<p><span class="keys">Confidence :</span><span class="values"> ${data.confidence} %</span></p>`;
 }
+
 export { updateUI };

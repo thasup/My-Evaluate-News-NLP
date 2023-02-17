@@ -9,14 +9,16 @@ function handleURL(event) {
   const result = document.getElementsByClassName("results")[0];
 
   // check what url was put into the form field
-  let inputURL = document.getElementById("name").value;
-  console.log(inputURL);
+  const inputURL = document.getElementById("name").value;
 
-  const path =
-    "https://thasup-sentiment-analysis.herokuapp.com" ||
-    "http://localhost:8081";
+    const isValidUrl = Client.checkForURL(inputURL);
+
   // POST request to server side
-  if (Client.checkForURL(inputURL) === true) {
+  if (isValidUrl) {
+    const path =
+    "https://thasup-sentiment-analysis.onrender.com" ||
+    "http://localhost:8081";
+
     // Uppdate button
     button.setAttributeNode(disabled);
     span.classList.add("show");
@@ -38,7 +40,9 @@ function handleURL(event) {
         Client.updateUI(res);
         result.classList.add("show");
       });
-  } else alert("Invalid URL");
+  } else {
+    alert("Invalid URL");
+  }
 }
 
 export { handleURL };
